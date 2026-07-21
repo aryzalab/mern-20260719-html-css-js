@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="5">MERN Stack Class</th>
+        </tr>
+
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th colspan="2">Phone</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- rows -->
+        <tr>
+          <!-- data/column  -->
+          <td>Ram</td>
+          <td>20</td>
+          <td>Dharan</td>
+        </tr>
+
+        <tr>
+          <td>Hari</td>
+          <td>30</td>
+          <td>Kathmandu</td>
+          <td>9876543012</td>
+          <td>025-234132</td>
+        </tr>
+
+        <tr>
+          <td>Salman Khan</td>
+          <td>52</td>
+          <td>Mumbai, India</td>
+          <td>9876543012</td>
+        </tr>
+        <tr></tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td rowspan="2" colspan="3">Total:</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>10</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

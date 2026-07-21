@@ -36,9 +36,32 @@ HTML is the standard markup language for creating web pages.
 
 List item -> <li>
 
-### Links, media
+### Links, media, iframe
+
+Hyperlink -> <a href="url">Click</a>
+
+Image -> <img src="path of image" alt=""/>
+
+Video -> <video src="path of video"></video>
+
+Iframe -> <iframe/> 
 
 ### Table
+
+<table>
+<tr>
+<td>
+<thead>
+<tbody>
+
+rowspan
+colspan
+
+### Inline & Block elements
+
+Inline: Covers only required width. <a>, <img>, <span>, <video>, <input>
+
+Block: Covers full width. <h1>, <p>, <div>, <section>, <ul>
 
 ### Form & input
 
