@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="text">Text</label>
+        <input type="text" id="text" name="text" value="Ram" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="students">students</label>
+        <input type="text" id="students" list="studentList" />
+        <datalist id="studentList">
+          <option value="Ram"></option>
+          <option value="Hari"></option>
+          <option value="Sita"></option>
+          <option value="Rohan"></option>
+          <option value="Rajesh"></option>
+        </datalist>
+      </div>
+
+      <div>
+        <label for="number">number</label>
+        <input type="number" id="number" min="1" max="100" />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" minlength="6" maxlength="24" />
+      </div>
+
+      <div>
+        <label for="date">date</label>
+        <input type="date" id="date" />
+      </div>
+
+      <div>
+        <label for="time">time</label>
+        <input type="time" id="time" />
+      </div>
+
+      <div>
+        <label for="datetime-local">datetime-local</label>
+        <input type="datetime-local" id="datetime-local" />
+      </div>
+
+      <div>
+        <label for="range">range</label>
+        <input type="range" id="range" min="1" max="5" step="1" />
+      </div>
+
+      <div>
+        <label for="color">color</label>
+        <input type="color" id="color" />
+      </div>
+
+      <div>
+        <label for="tel">phone</label>
+        <input type="tel" id="tel" />
+      </div>
+
+      <div>
+        <label>radio</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" checked value="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" id="other" value="other" />
+        <label for="other">Other</label>
+      </div>
+
+      <div>
+        <label>checkbox</label>
+        <input
+          type="checkbox"
+          name="hobbies"
+          id="swim"
+          checked
+          value="swimming"
+        />
+        <label for="swim">Swimming</label>
+
+        <input type="checkbox" name="hobbies" id="hike" value="hiking" />
+        <label for="hike">Hiking</label>
+
+        <input type="checkbox" name="hobbies" id="music" value="music" />
+        <label for="music">Music</label>
+      </div>
+
+      <div>
+        <label for="file">file</label>
+        <input type="file" id="file" accept=".jpg,.png,.webp" multiple />
+      </div>
+
+      <div>
+        <label for="search">search</label>
+        <input type="search" id="search" disabled />
+      </div>
+
+      <div>
+        <label for="textarea">textarea</label>
+        <textarea name="textarea" id="textarea" rows="10" cols="50"></textarea>
+      </div>
+
+      <div>
+        <label for="select">select</label>
+        <select id="select" name="select">
+          <option disabled selected>Please select an option</option>
+          <option value="1">class 1</option>
+          <option value="2">class 2</option>
+          <option value="3">class 3</option>
+          <option value="4">class 4</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+      </div>
+    </form>
+  </body>
+</html>

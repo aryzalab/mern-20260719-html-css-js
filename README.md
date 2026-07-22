@@ -44,7 +44,7 @@ Image -> <img src="path of image" alt=""/>
 
 Video -> <video src="path of video"></video>
 
-Iframe -> <iframe/> 
+Iframe -> <iframe/>
 
 ### Table
 
@@ -64,6 +64,38 @@ Inline: Covers only required width. <a>, <img>, <span>, <video>, <input>
 Block: Covers full width. <h1>, <p>, <div>, <section>, <ul>
 
 ### Form & input
+
+<form>
+<input>
+<label>
+<textarea>
+<select>
+<option>
+<datalist>
+
+**Attributes**
+
+- type, id, for, name, value, placeholder, required, disabled
+- Number, Range: min, max
+- Text, Password: minlength, maxlength
+- Select: selected
+
+#### Input types
+
+1. text
+2. email
+3. number
+4. password
+5. date
+6. time
+7. date-time-local
+8. range (min, max, step)
+9. color
+10. tel
+11. radio (name)
+12. checkbox
+13. file (accept, multiple)
+14. search
 
 ### Semantics
 
