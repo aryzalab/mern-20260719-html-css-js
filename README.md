@@ -11,7 +11,7 @@ Websites/Webapps are made up of HTML, CSS, JS.
 - **Client**: The browser or app that sends requests to the server.
 - **Server**: The machine that hosts the website/webapp, process the request of the client and sends responses (HTML, CSS, data).
 
-<hr/>
+`<hr/>`
 
 ## HTML (Hypertext Markup Language)
 
@@ -19,52 +19,55 @@ HTML is the standard markup language for creating web pages.
 
 ### Text formatting elements/tags
 
-1. Headings -> <h1> - <h6>
-2. Paragraph -> <p>
-3. Bold -> <strong>
-4. Italics/Emphasize -> <em>
-5. Superscript -> <sup>
-6. Subscript -> <sub>
-7. Line break -> <br> (Not recommended, instead use CSS)
-8. Divider -> <hr>
-9. <pre>
+1. Headings -> `<h1>` - `<h6>`
+2. Paragraph -> `<p>`
+3. Bold -> `<strong>`
+4. Italics/Emphasize -> `<em>`
+5. Superscript -> `<sup>`
+6. Subscript -> `<sub>`
+7. Line break -> `<br> (Not recommended, instead use CSS)`
+8. Divider -> `<hr>`
+9. `<pre>`
 
 ### List elements
 
-1. Ordered list -> <ol>
-2. Unordered list -> <ul>
+1. Ordered list -> `<ol>`
+2. Unordered list -> `<ul>`
 
-List item -> <li>
+List item -> `<li>`
 
 ### Links, media, iframe
 
-Hyperlink -> <a href="url">Click</a>
+Hyperlink -> `<a href="url">Click</a>`
 
-Image -> <img src="path of image" alt=""/>
+Image -> `<img src="path of image" alt=""/>`
 
-Video -> <video src="path of video"></video>
+Video -> `<video src="path of video"></video>`
 
-Iframe -> <iframe/>
+Iframe -> `<iframe/>`
 
 ### Table
 
+```
 <table>
 <tr>
 <td>
 <thead>
 <tbody>
+```
 
 rowspan
 colspan
 
 ### Inline & Block elements
 
-Inline: Covers only required width. <a>, <img>, <span>, <video>, <input>
+Inline: Covers only required width. `<a>, <img>, <span>, <video>, <input>`
 
-Block: Covers full width. <h1>, <p>, <div>, <section>, <ul>
+Block: Covers full width. `<h1>, <p>, <div>, <section>, <ul>`
 
 ### Form & input
 
+```
 <form>
 <input>
 <label>
@@ -72,6 +75,7 @@ Block: Covers full width. <h1>, <p>, <div>, <section>, <ul>
 <select>
 <option>
 <datalist>
+```
 
 **Attributes**
 
@@ -99,6 +103,88 @@ Block: Covers full width. <h1>, <p>, <div>, <section>, <ul>
 
 ### Semantics
 
+- Convention, best practice of using appropriate HTML elements
+
+```
+<header>
+<nav>
+</header>
+<main>
+<section> <aside>
+<section>
+</main>
+<footer>
+```
+
 ## CSS (Cascading style sheet)
+
+- CSS is a style sheet used to style and layout web pages/HTML - colors, fonts, spacing, position, animation, view.
+
+### Syntax
+
+```
+<selector> {
+    property: value;
+    ....
+}
+```
+
+```
+h1 {
+    color:red;
+    font-weight:bold;
+}
+
+```
+
+### Selectors
+
+1. Element: element name `h1, p, div` | Least priority
+2. Class: `.class-name` | mid-priority (use for styling)
+3. Id: `#id-name` | top-priority
+
+```
+// element
+h1 {
+    // your styles
+}
+
+// class
+.myclass {
+    // your styles
+}
+
+// id
+#myid {
+    // your styles
+}
+
+```
+
+### Usage
+
+1. Inline
+2. Internal
+3. External (Recommended)
+
+### Properties
+
+- color
+- font
+==============
+- units (px, rem, em)
+- spacing - margin, padding, border
+- text
+- gradient
+- display
+- position
+- flex
+- grid
+- table
+- form
+- transformation - translate, rotate, skew, scale
+- misc - overflow, transition
+- animation
+- google-fonts
 
 ## JS (JavaScript)
