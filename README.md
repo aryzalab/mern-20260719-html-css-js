@@ -171,19 +171,21 @@ h1 {
 
 - color
 - font
-==============
-- units (px, rem, em)
-- spacing - margin, padding, border
 - text
+- box-model: margin, padding, border, height, width
 - gradient
 - display
-- position
-- flex
+- flex (flexbox)
+
+==============
 - grid
+- flex grow, shrink
+- position
+- units (px, rem, em)
 - table
 - form
 - transformation - translate, rotate, skew, scale
-- misc - overflow, transition
+- misc - overflow, transition, background image
 - animation
 - google-fonts
 
