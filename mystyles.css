@@ -6,6 +6,10 @@
 Opacity - Alpha (0-1)
 **/
 
+html {
+  font-size: 30px;
+}
+
 .heading-2 {
   /* color: rgb(10, 247, 112); */
   /* color: #3503cb; Hex */
@@ -117,4 +121,135 @@ Opacity - Alpha (0-1)
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.list {
+  list-style: square; /* disc, circle, square, none */
+}
+
+.list li:first-child {
+  color: red;
+}
+
+.list li:last-child {
+  color: green;
+}
+
+.list li:nth-child(2n) {
+  color: blue;
+}
+
+/* Unit properties: px (pixel), rem, em, in, cm, vh, vw  */
+/*
+rem: relative to root
+em: relative to parent
+*/
+.units {
+  background: none;
+  border: 2px solid;
+  font-size: 2cm;
+}
+
+.unit-box {
+  height: 100vh;
+  width: 50%;
+  background-color: bisque;
+  font-size: 10px;
+}
+
+.unit-box p {
+  font-size: 1.5rem;
+}
+
+.child-box {
+  height: 100px;
+  width: 50%;
+  background-color: aqua;
+  font-size: 15px;
+}
+
+/* Positional properties: static, relative, absolute, fixed, sticky */
+.positional-box {
+  height: 500px;
+  width: 500px;
+  background-color: gold;
+  position: relative;
+}
+
+.positional-child {
+  height: 200px;
+  width: 200px;
+  background-color: deeppink;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: 12;
+}
+
+.fixed-child {
+  height: 200px;
+  width: 200px;
+  background-color: lightsalmon;
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  z-index: -1;
+}
+
+.sticky-child {
+  height: 200px;
+  width: 200px;
+  background-color: lightslategray;
+  position: sticky;
+  top: 0px;
+  right: 50px;
+  z-index: 0;
+}
+
+/** pseudo-class (fake class)**/
+
+.pseudo-click:hover {
+  color: red;
+}
+
+.pseudo-click:active {
+  color: green;
+}
+
+input {
+  border: 1px solid black;
+  outline: none;
+}
+
+input:hover {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+input:active {
+  border: 1px solid green;
+}
+
+input:disabled {
+  background-color: black;
+}
+
+#check {
+  color: red;
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+/* Overflow properties  */
+.content {
+  font-size: 1rem;
+  font-weight: normal;
+  border: 1px solid;
+  background-color: bisque;
+  height: 500px;
+  width: 500px;
+  overflow: auto; /* visible, auto, scroll, hidden */
 }

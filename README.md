@@ -176,17 +176,21 @@ h1 {
 - gradient
 - display
 - flex (flexbox)
-
-==============
-- grid
-- flex grow, shrink
+- list
+- units (px, rem, em, cm, in, vh, vw)
 - position
-- units (px, rem, em)
+- pseudo-class: hover, active, focus, child
+- overflow
+==============
 - table
 - form
+- grid
+- flex grow, shrink
 - transformation - translate, rotate, skew, scale
-- misc - overflow, transition, background image
+- misc - transition, background image
 - animation
 - google-fonts
+- responsive
+- pseudo-element
 
 ## JS (JavaScript)
