@@ -8,6 +8,7 @@ Opacity - Alpha (0-1)
 
 html {
   font-size: 30px;
+  box-sizing: border-box;
 }
 
 .heading-2 {
@@ -252,4 +253,140 @@ input:disabled {
   height: 500px;
   width: 500px;
   overflow: auto; /* visible, auto, scroll, hidden */
+}
+
+/* Table properties  */
+
+.users-table,
+.users-table th,
+.users-table td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  padding: 5px;
+  width: 200px;
+}
+
+.users-table th {
+  color: white;
+  background-color: magenta;
+  text-align: left;
+}
+
+.users-table tr th:first-child,
+.users-table tr td:first-child {
+  width: 300px;
+}
+
+.users-table tr:nth-child(2n) td {
+  background-color: bisque;
+}
+
+/* Form properties  */
+
+.user-form {
+  background-color: #efefef;
+  padding: 1rem 3rem;
+  border: 1px solid #4c4d4f;
+  border-radius: 20px;
+  max-width: 50%;
+  margin: auto;
+}
+
+.user-form label {
+  font-size: 0.75rem;
+}
+
+.user-form textarea,
+.user-form select,
+.user-form input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.user-form input[type="color"] {
+  width: 50px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.user-form input[type="radio"],
+.user-form input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+}
+
+.user-form button {
+  min-width: 200px;
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.user-form .flex {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Grid properties */
+
+.grid-container {
+  border: 1px solid;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(auto, 180px)); */
+  row-gap: 1rem;
+  column-gap: 0.5rem;
+  grid-template-areas:
+    "four six eight ten"
+    "first first three five"
+    "two two two two"
+    "seven . nine .";
+}
+
+.grid-container .grid-box {
+  height: 100px;
+  max-width: 100%;
+  background-color: deepskyblue;
+}
+
+.grid-box.one {
+  grid-area: first;
+}
+
+.grid-box.two {
+  grid-area: two;
+}
+
+.grid-box.three {
+  grid-area: three;
+}
+.grid-box.four {
+  grid-area: four;
+}
+.grid-box.five {
+  grid-area: five;
+}
+.grid-box.six {
+  grid-area: six;
+}
+.grid-box.seven {
+  grid-area: seven;
+}
+.grid-box.eight {
+  grid-area: eight;
+}
+.grid-box.nine {
+  grid-area: nine;
+}
+.grid-box.ten {
+  grid-area: ten;
 }

@@ -181,16 +181,17 @@ h1 {
 - position
 - pseudo-class: hover, active, focus, child
 - overflow
-==============
 - table
 - form
 - grid
+- responsive
+
+==============
 - flex grow, shrink
 - transformation - translate, rotate, skew, scale
 - misc - transition, background image
 - animation
 - google-fonts
-- responsive
 - pseudo-element
 
 ## JS (JavaScript)
