@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformation</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: bisque;
+        border: 3px solid;
+        /* transform: translate(-100px, 200px); */
+        /* transform: rotate(60deg); */
+        /* transform: scale(1); */
+        /* transform: skewX(-30deg); */
+        /* transition: all 1s ease-in-out; */
+        animation: anime 5s ease infinite;
+      }
+
+      .box:hover {
+        transform: translate(100px, 0);
+        background-color: green;
+      }
+
+      .loader {
+        height: 50px;
+        width: 50px;
+        border: 5px dotted;
+        border-radius: 50%;
+        animation: loading 3s linear infinite;
+      }
+
+      @keyframes loading {
+        0% {
+          transform: rotate(90deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes anime {
+        0% {
+          transform: translate(0, 0);
+          background-color: red;
+        }
+
+        10% {
+          transform: translate(500px, 0);
+        }
+
+        50% {
+          transform: translate(500px, 500px) rotate(45deg);
+          background-color: blue;
+        }
+
+        70% {
+          transform: translate(500px, 500px) rotate(180deg) scale(1.5);
+          font-size: 2rem;
+        }
+
+        100% {
+          transform: translate(0, 0) rotate(0) scale(1);
+          background-color: red;
+        }
+      }
+
+      .container {
+        border: 1px solid;
+        height: 500px;
+        width: 500px;
+        /* background-image: url('assets/images/home.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;*/
+        position: relative;
+      }
+
+      .container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .container h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">box</div>
+    <div class="loader"></div>
+    <div class="container">
+      <!-- <img src="assets/images/home.webp" alt="" /> -->
+      <video src="assets/videos/cat.mp4" autoplay muted></video>
+      <h1>hello world</h1>
+    </div>
+  </body>
+</html>

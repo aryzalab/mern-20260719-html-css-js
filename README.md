@@ -185,13 +185,13 @@ h1 {
 - form
 - grid
 - responsive
-
-==============
-- flex grow, shrink
 - transformation - translate, rotate, skew, scale
-- misc - transition, background image
+- transition
 - animation
+- background image
+- variables
 - google-fonts
+- flex grow, shrink
 - pseudo-element
 
 ## JS (JavaScript)

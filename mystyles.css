@@ -6,6 +6,11 @@
 Opacity - Alpha (0-1)
 **/
 
+:root {
+  --primary-color: teal;
+  --title: 5rem;
+}
+
 html {
   font-size: 30px;
   box-sizing: border-box;
@@ -15,26 +20,38 @@ html {
   /* color: rgb(10, 247, 112); */
   /* color: #3503cb; Hex */
   /* color: rgba(255, 0, 0, 0.5); */
-  color: #035151d8;
+  color: var(--primary-color);
   background-color: #00800050;
 }
 
 /* Font properties */
 
 .heading-2 {
-  font-family: "Helvetica";
-  font-size: 4rem;
-  font-weight: lighter;
+  font-family: "Poppins";
+  font-size: var(--title);
+  font-weight: bold;
   font-style: italic;
 }
 
+.heading-1 {
+  font-size: 3rem;
+  font-family: "Nunito";
+  font-weight: normal;
+}
+
 .heading-3 {
-  font-family: "Courier";
+  font-family: "Montserrat";
   font-size: 3rem;
   font-weight: normal;
 
   /* text gradient  */
-  background: linear-gradient(to right, red, blue, green, white);
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    blue,
+    green,
+    white
+  );
   background-clip: text;
   color: transparent;
 }
@@ -42,9 +59,15 @@ html {
 .gradient-box {
   height: 200px;
   width: 100%;
-  /* background-color: red; */
-  background: linear-gradient(to right, red 50%, blue, green, white);
-  /* background: radial-gradient(red, green, blue, white); */
+  /* background-color: darkred; */
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 50%,
+    blue,
+    green,
+    white
+  );
+  /* background: radial-gradient(darkred, green, blue, white); */
   /* background: linear-gradient(to right, #fc0012, #fbacac); */
 }
 
@@ -56,7 +79,7 @@ html {
   /* text-decoration: line-through; */
   text-decoration: overline;
   text-transform: capitalize; /* uppercase, lowercase, capitalize */
-  text-shadow: 2px 0 5px red; /* horizontal vertical spread color */
+  text-shadow: 2px 0 5px var(--primary-color); /* horizontal vertical spread color */
   letter-spacing: 5px;
   word-spacing: 10px;
 }
@@ -71,7 +94,7 @@ html {
 
 .box {
   height: 100px;
-  color: red;
+  color: darkred;
   background-color: bisque;
   width: 100px;
 
@@ -116,12 +139,12 @@ html {
 
 .card {
   height: 100px;
-  width: 100px;
+  width: 100%;
   background-color: darksalmon;
   border: 1px solid black;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .list {
@@ -129,7 +152,7 @@ html {
 }
 
 .list li:first-child {
-  color: red;
+  color: darkred;
 }
 
 .list li:last-child {
@@ -210,7 +233,7 @@ em: relative to parent
 /** pseudo-class (fake class)**/
 
 .pseudo-click:hover {
-  color: red;
+  color: darkred;
 }
 
 .pseudo-click:active {
@@ -223,7 +246,7 @@ input {
 }
 
 input:hover {
-  border: 1px solid red;
+  border: 1px solid darkred;
 }
 
 input:focus {
@@ -239,8 +262,8 @@ input:disabled {
 }
 
 #check {
-  color: red;
-  border: 1px solid red;
+  color: darkred;
+  border: 1px solid darkred;
   padding: 1rem;
 }
 
