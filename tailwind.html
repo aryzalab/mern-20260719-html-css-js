@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Background color: bg-{color}-{shades} : shades - 50, 100, 200, ... 900, 950 -->
+    <h1 class="bg-blue-500">Hello world</h1>
+    <h2 class="bg-pink-700">Tailwind is awesome</h2>
+
+    <!-- Text Color:  text-{color}-{shades} : shades - 50, 100, 200, ... 900, 950 -->
+    <h1 class="text-green-600 bg-green-100">Hello world</h1>
+
+    <!-- Gradient: bg-gradient-to-r from-{start-color with shade} to-{end-color} -->
+    <h2 class="bg-gradient-to-r from-green-500 via-red-500 to-blue-500">
+      Tailwind is awesome
+    </h2>
+
+    <!-- Typography -->
+    <!-- Font size: text-{size}, size: xs, sm, md, lg, xl, 2xl, 3xl, 9xl -->
+    <h1 class="text-9xl">Hello world</h1>
+    <h2 class="text-6xl">Hello world</h2>
+    <h3 class="text-2xl">Hello world</h3>
+    <h4 class="text-lg">Hello world</h4>
+    <p>Hello world</p>
+    <span class="text-sm">Hello world</span>
+
+    <!-- Font weight: bold, medium, extra-bold, black, light, normal, semibold -->
+    <h1 class="font-bold text-2xl">Hello world</h1>
+    <h1 class="font-medium text-2xl">Hello world</h1>
+    <h1 class="font-light text-2xl">Hello world</h1>
+    <h1 class="font-black text-2xl line-through">Hello world</h1>
+
+    <!-- Text properties -->
+    <h1 class="text-center underline uppercase">Text alignment</h1>
+    <p class="text-justify">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+      pariatur aspernatur? Repellendus, explicabo laudantium? Repellat id sit
+      dolores mollitia nemo velit deserunt exercitationem impedit. Iusto amet,
+      ipsam explicabo mollitia facere sapiente harum eligendi soluta animi
+      commodi ut facilis asperiores iste. Eius alias eum quia sed, eveniet
+      ratione tempora ullam, vitae, sint sequi minus velit praesentium magni
+      incidunt. Labore voluptas nihil reiciendis illum beatae aut minus,
+      necessitatibus esse voluptatem soluta nam non adipisci, velit est quos
+      minima! Perferendis ipsa, sapiente alias at expedita recusandae natus
+      suscipit, voluptatibus ducimus reiciendis aut beatae vitae, doloribus
+      aliquid? Dolor facere delectus illo repudiandae ea et ipsam sunt,
+      recusandae aspernatur ut est corrupti debitis temporibus laudantium
+      dolorum provident dolore ducimus hic. Adipisci asperiores hic iusto
+      perspiciatis dolor a explicabo deserunt ea rerum similique inventore odio
+      reiciendis aspernatur earum, reprehenderit amet ut repudiandae. Qui
+      dolorem facilis, non aliquam sequi dolore voluptatum alias neque adipisci
+      quidem totam, ex quibusdam a iure impedit quos porro. Tempora sapiente
+      dolores odit nihil nemo in quas, sunt quos fuga? Unde quis recusandae quae
+      quos fugiat nisi possimus, aliquam similique culpa! Hic inventore,
+      expedita blanditiis quam dolorem fuga consequatur qui obcaecati eaque
+      consequuntur natus quas recusandae autem adipisci suscipit minima alias
+      velit voluptas?
+    </p>
+    <h2 class="tracking-widest">Letter spacing</h2>
+    <h2 class="tracking-tight">Letter spacing</h2>
+
+    <h2 class="leading-tight">Line height</h2>
+    <h2 class="leading-loose">
+      Line height Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Consequatur laboriosam deserunt facere quibusdam cupiditate debitis vel in
+      culpa illo autem, magnam sed sequi, omnis iure quod, inventore adipisci
+      non nobis quasi? Nostrum esse dolorem excepturi optio maiores harum,
+      suscipit ullam quo quas! Iste, reiciendis voluptate doloribus, illo
+      incidunt eaque quidem facilis iure voluptatem cum ducimus esse quo
+      impedit, atque nam molestias quam et labore. Voluptatibus accusantium quae
+      eum quam. Amet ad quidem temporibus voluptates mollitia minima at vitae a
+      facilis in incidunt quam officia assumenda nobis aspernatur nihil totam,
+      repudiandae soluta quod praesentium voluptatibus et fugiat architecto.
+      Enim eveniet dolores sit corporis, dolor officiis. Commodi cumque
+      molestias officiis tempore magnam quia soluta explicabo assumenda est
+      dolores nisi, voluptatum quis, in sunt culpa debitis excepturi unde illo
+      autem, quaerat dolorem voluptas illum deserunt. Quidem deserunt quibusdam
+      pariatur molestias neque saepe tenetur delectus libero reiciendis dolore
+      ad rem maxime quam, ipsam commodi aliquid error excepturi iure doloremque
+      itaque deleniti ullam aspernatur possimus facere. Necessitatibus, nulla
+      quam unde vero illum soluta nam repellat quasi et ut dolor quae molestiae
+      quo autem odit consectetur libero asperiores. Placeat quos vero quo non
+      aliquid soluta tempora natus, quas hic sit incidunt ad. Perferendis nemo
+      eos quis?
+    </h2>
+
+    <!-- Box model properties: height (h), width (w), margin (m), padding (p), border (border) -->
+    <div
+      class="bg-red-300 h-30 w-20 min-h-20 max-w-50 m-10 p-5 border-dashed border-blue-500 border-4"
+    >
+      hello
+    </div>
+
+    <button
+      class="border border-black px-10 py-4 my-5 ml-20 rounded-2xl shadow-lg shadow-red-500"
+    >
+      Click me
+    </button>
+
+    <!-- Display properties -->
+    <div class="block">Hello world</div>
+    <div class="inline">Hello world</div>
+    <div class="inline">Hello world</div>
+    <div class="hidden">Hello world</div>
+
+    <!-- Flex  -->
+    <div
+      class="border-black border bg-blue-200 flex items-center justify-center gap-4"
+    >
+      <div class="h-20 w-20 bg-blue-500 border">box</div>
+      <div class="h-10 w-10 bg-blue-500 border">box</div>
+      <div class="h-32 w-32 bg-blue-500 border">box</div>
+      <div class="h-24 w-24 bg-blue-500 border">box</div>
+      <div class="h-16 w-16 bg-blue-500 border">box</div>
+      <div class="h-20 w-20 bg-blue-500 border">box</div>
+    </div>
+
+    <div class="h-64 w-40 bg-gray-200 rounded-xl shadow-xl m-10">
+      <h1></h1>
+    </div>
+
+    <div class="grid grid-cols-4 items-center justify-items-center gap-4">
+      <div class="h-20 w-20 bg-blue-500 border">box</div>
+      <div class="h-20 w-20 bg-blue-500 border">box</div>
+      <div class="h-20 w-20 bg-blue-500 border">box</div>
+      <div class="h-20 w-20 bg-blue-500 border">box</div>
+      <div class="h-20 w-20 bg-blue-500 border">box</div>
+      <div class="h-20 w-20 bg-blue-500 border">box</div>
+      <div class="h-20 w-20 bg-blue-500 border">box</div>
+    </div>
+
+    <div class="h-screen bg-green-500"></div>
+  </body>
+</html>

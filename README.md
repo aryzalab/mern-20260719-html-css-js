@@ -194,4 +194,23 @@ h1 {
 - flex grow, shrink
 - pseudo-element
 
+## Tailwind
+
+- Utility first CSS framework for rapidly building custom UI.
+- Instead of writing CSS selectors, we use predefined utility classes directly in HTML
+
+#### Features
+
+1. Highly customizable
+2. Responsive design ready
+3. Works in dark mode
+4. Just in Time (JIT) compiler for faster builds
+
+- start from Position property
+- custom value
+- reusing styles
+- group class
+- dark mode
+- responsive
+
 ## JS (JavaScript)
