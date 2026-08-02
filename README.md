@@ -206,11 +206,13 @@ h1 {
 3. Works in dark mode
 4. Just in Time (JIT) compiler for faster builds
 
-- start from Position property
-- custom value
-- reusing styles
-- group class
-- dark mode
+- custom value: class-[value]
 - responsive
+    - sm: >=640px
+    - md: >=768px
+    - lg: >=1024px
+    - xl: >=1280px
+- dark mode => dark:class
+- reusing styles: @apply
 
 ## JS (JavaScript)

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      .box {
+        @apply h-20 w-20 bg-red-500 border-2 border-black rounded-xl p-2;
+      }
+    </style>
   </head>
   <body>
     <!-- Background color: bg-{color}-{shades} : shades - 50, 100, 200, ... 900, 950 -->
@@ -124,15 +129,84 @@
     </div>
 
     <div class="grid grid-cols-4 items-center justify-items-center gap-4">
-      <div class="h-20 w-20 bg-blue-500 border">box</div>
-      <div class="h-20 w-20 bg-blue-500 border">box</div>
-      <div class="h-20 w-20 bg-blue-500 border">box</div>
-      <div class="h-20 w-20 bg-blue-500 border">box</div>
-      <div class="h-20 w-20 bg-blue-500 border">box</div>
-      <div class="h-20 w-20 bg-blue-500 border">box</div>
-      <div class="h-20 w-20 bg-blue-500 border">box</div>
+      <!-- Reusing styles -->
+      <div class="box">box</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
     </div>
 
-    <div class="h-screen bg-green-500"></div>
+    <!-- Positional properties: relative, absolute, fixed, sticky -->
+    <div class="absolute h-64 w-64 bg-blue-300 -top-10 right-0"></div>
+    <div class="fixed h-64 w-64 bg-green-300 top-10 left-0"></div>
+    <div class="sticky h-64 w-64 bg-red-300 top-0 left-64"></div>
+
+    <!-- Pseudo class properties  -->
+    <button
+      class="px-5 py-3 bg-red-500 hover:bg-blue-500 hover:text-white active:bg-black disabled:bg-gray-400"
+    >
+      Click me
+    </button>
+
+    <p class="h-96 w-96 bg-gray-100 overflow-scroll">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      exercitationem ullam error nisi. Debitis, sint repellendus. Quam, harum
+      voluptates ratione vero fuga aspernatur nam earum architecto quia culpa
+      minima hic aperiam. Veniam libero repellat repellendus, accusantium odit
+      beatae expedita adipisci ut ipsam, perferendis assumenda illo corrupti
+      commodi est in vero totam excepturi voluptatibus magnam quam eius aliquid?
+      Mollitia alias quaerat facilis. Quibusdam velit ducimus dolorum esse
+      optio, ullam veritatis consequuntur commodi minus, ea eius consectetur
+      mollitia cumque! Totam laudantium nihil soluta alias odio sequi obcaecati
+      eos deleniti, laboriosam officiis quam nesciunt veritatis autem, molestias
+      ipsam adipisci? Soluta dolorum, sed debitis culpa vel maxime similique
+      error libero provident rem voluptates nesciunt aspernatur, voluptatibus
+      aliquid! Aliquam, fugiat? Dolores nesciunt nulla quam beatae, inventore
+      expedita eaque! Commodi pariatur iure vitae porro. Amet, incidunt modi? A
+      laborum unde consectetur nisi quaerat alias, ad minus eaque fugiat eius
+      error odit molestiae? Provident libero aperiam quae sapiente impedit, ipsa
+      doloremque debitis quis corrupti nulla enim inventore repellat animi
+      similique dolore quo atque tempore natus nam reprehenderit vitae. Odio
+      quam totam nihil nam corporis ad adipisci temporibus enim odit minus sint
+      dicta recusandae accusamus at autem itaque aspernatur veritatis nemo
+      eligendi fugit quisquam, beatae ullam necessitatibus! Odio!
+    </p>
+
+    <div
+      class="h-64 w-64 bg-blue-600 -translate-x-10 hover:rotate-45 hover:scale-150 transition duration-500 animate-pulse"
+    ></div>
+
+    <!-- Custom values -->
+    <div class="h-64 w-64 bg-[#f00000] m-[5rem]"></div>
+
+    <!-- Responsive: sm,md,lg,xl -->
+    <div
+      class="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+    >
+      <div class="w-40 h-40 bg-zinc-500 md:bg-blue-500"></div>
+      <div class="w-40 h-40 bg-zinc-500"></div>
+      <div class="w-40 h-40 bg-zinc-500"></div>
+      <div class="w-40 h-40 bg-zinc-500"></div>
+      <div class="w-40 h-40 bg-zinc-500"></div>
+    </div>
+
+    <!-- Dark mode -->
+    <div class="h-screen bg-green-500 dark:bg-blue-500">
+      <h1
+        class="text-5xl dark:text-white dark:font-bold hover:text-indigo-600 dark:hover:text-red-600"
+      >
+        Hello world
+      </h1>
+    </div>
+
+    <div
+      class="h-screen bg-[url(assets/images/home.webp)] bg-no-repeat bg-center bg-cover"
+    ></div>
   </body>
 </html>
