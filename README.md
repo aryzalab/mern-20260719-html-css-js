@@ -208,11 +208,30 @@ h1 {
 
 - custom value: class-[value]
 - responsive
-    - sm: >=640px
-    - md: >=768px
-    - lg: >=1024px
-    - xl: >=1280px
+  - sm: >=640px
+  - md: >=768px
+  - lg: >=1024px
+  - xl: >=1280px
 - dark mode => dark:class
 - reusing styles: @apply
 
 ## JS (JavaScript)
+
+- High-level programming language
+- Interpreted programming language
+- Built on C++
+- Dynamically typed programming language
+- ECMA Script (ES6 2015), Standarization of JS
+- Used to build interactive web page, API, backend
+- Node.js, Electron.js, React, Vue, React Native, Tensorflow.js
+
+============================
+
+- Logical operator
+- Ternary operator
+- If/else statement, switch
+- loop
+- function
+- EcmaScript
+
+### JS Semantics
