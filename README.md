@@ -227,11 +227,15 @@ h1 {
 
 ============================
 
-- Logical operator
-- Ternary operator
-- If/else statement, switch
-- loop
-- function
 - EcmaScript
+- Arrow function
+- Higher array method
+- template literal
+- spread, rest operator
+- array methods
+- Node.js
+- API
+
+- DOM manipulation (React)
 
 ### JS Semantics

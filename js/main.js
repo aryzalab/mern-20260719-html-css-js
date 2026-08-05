@@ -126,3 +126,18 @@ console.log(54 == "54"); // true
 console.log(54 == "543"); // false
 console.log(54 === "54"); // false
 console.log(54 === 54); // true
+
+// Logical operator
+// AND: All inputs true => true
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(5 == 5 && 5 == "5"); // true
+
+// OR: Any one input true => true
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || false); // false
+console.log(5 == 5 || 5 == "5"); // true
+
+// NOT: If input is true => false
+console.log(!true); // false
