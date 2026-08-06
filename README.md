@@ -227,12 +227,7 @@ h1 {
 
 ============================
 
-- EcmaScript
-- Arrow function
-- Higher array method
-- template literal
-- spread, rest operator
-- array methods
+- Array methods
 - Node.js
 - API
 
