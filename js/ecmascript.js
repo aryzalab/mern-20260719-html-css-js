@@ -3,7 +3,6 @@
  * Spread/Rest operator
  * Array/Object Destructuring
  * Arrow function
- * Array methods
  */
 
 const name = "Rohan";
